@@ -1,0 +1,217 @@
+## YAML Template.
+spring:
+  profiles:
+      active: ${TSENV}
+     
+server:
+  port: 41400
+  tomcat:
+        compression: on
+        compressableMimeTypes: application/json,application/xml
+        
+hystrix: 
+  threadpool:
+    default:
+      maxQueueSize: 200
+      queueSizeRejectionThreshold: 200
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 170000
+ribbon:
+  MaxAutoRetries: 2
+  # Max number of next servers to retry (excluding the first server)
+  MaxAutoRetriesNextServer: 2        
+  OkToRetryOnAllOperations: true
+  ServerListRefreshInterval: 2000
+  ConnectTimeout: 6000
+  ReadTimeout: 6000
+  
+---
+#FOR LOCAL
+spring:
+    profiles: LOCAL
+       
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://definite-boats.maas.reddsystem.com:40000/eureka/
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${random.value}
+    preferIpAddress: true
+
+    
+#backoffice BD
+backoffice: 
+    url : jdbc:mysql://gracious-neck.maas.reddsystem.com:3306/backoffice?autoReconnect=true
+    user : gps
+    password : gps
+    min : 2
+    max : 20
+    
+#rslite BD
+lite: 
+    url : jdbc:mysql://gracious-neck.maas.reddsystem.com:3306/rsLite3?autoReconnect=true
+    user : gps
+    password : gps
+    min : 10
+    max : 20
+
+microservices:
+    user: http://unruly-locket.maas.reddsystem.com:42200/metadata/user/
+    company: http://unruly-locket.maas.reddsystem.com:42400/metadata/company/
+    auth: http://unruly-locket.maas.reddsystem.com:48200/auth/authorization/
+    pota: http://10.10.121.210:8181/esb-reporting-web/pota/
+    callback: http://www.chilerock.cl/gps/
+    
+---
+#FOR DEVELOPMENT
+spring:
+    profiles: DESA
+       
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://definite-boats.maas.reddsystem.com:40000/eureka/
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${random.value}
+    preferIpAddress: true
+
+    
+#backoffice BD
+backoffice: 
+    url : jdbc:mysql://gracious-neck.maas.reddsystem.com:3306/backoffice?autoReconnect=true
+    user : gps
+    password : gps
+    min : 2
+    max : 20
+    
+#rslite BD
+lite: 
+    url : jdbc:mysql://gracious-neck.maas.reddsystem.com:3306/rsLite3?autoReconnect=true
+    user : gps
+    password : gps
+    min : 10
+    max : 20   
+    
+microservices:
+    user: http://unruly-locket.maas.reddsystem.com:42200/metadata/user/
+    company: http://unruly-locket.maas.reddsystem.com:42400/metadata/company/
+    auth: http://unruly-locket.maas.reddsystem.com:48200/auth/authorization/   
+    pota: http://10.10.121.210:8181/esb-reporting-web/pota/
+    callback: http://unruly-locket.maas.reddsystem.com:41400/backoffice/pota/saveCallbackResponse/
+ 
+---
+#FOR QA   
+spring:
+    profiles: AWS-QA
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://microservicios01.qa.reddsystem.com:40000/eureka/, http://microservicios02.qa.reddsystem.com:40000/eureka/
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${random.value}
+    preferIpAddress: true
+
+#backoffice BD
+backoffice:
+    url : jdbc:mysql://rslitedb.qa.reddsystem.com:3306/backoffice?autoReconnect=true
+    user : gps
+    password : gps.,2013
+    min : 2
+    max : 20
+
+#rslite BD
+lite:
+   url : jdbc:mysql://rslitedb.qa.reddsystem.com:3306/rsLite3?autoReconnect=true
+   user : gps
+   password : gps.,2013
+   min : 10
+   max : 20
+
+microservices:
+    user: http://microservicios01.qa.reddsystem.com:42200/metadata/user/
+    company: http://microservicios01.qa.reddsystem.com:42400/metadata/company/
+    auth: http://microservicios01.qa.reddsystem.com:48200/auth/authorization/
+    pota: http://servicios.qa.reddsystem.com:8181/esb-reporting-web/pota/
+    callback: http://microservicios01.qa.reddsystem.com:41400/backoffice/pota/saveCallbackResponse/
+
+---
+#FOR PROD  
+spring:
+    profiles: PROD
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.11.121.14:40000/eureka/, http://10.11.121.12:40000/eureka/
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${random.value}
+    preferIpAddress: true
+    
+#backoffice BD
+backoffice: 
+    url : jdbc:mysql://10.12.121.6:3306/backoffice?autoReconnect=true
+    user : gps
+    password : gps.,2013
+    min : 2
+    max : 20
+    
+#rslite BD
+lite: 
+   url : jdbc:mysql://10.12.121.6:3306/rsLite3?autoReconnect=true
+   user : gps
+   password : gps.,2013
+   min : 2
+   max : 30
+    
+microservices:
+    user: http://10.10.121.210/metadata/user/
+    company: http://10.10.121.210/metadata/company/
+    auth: http://10.10.121.210/auth/authorization/
+    pota: http://10.10.121.210:8181/esb-reporting-web/pota/
+    callback: http://10.10.121.210/backoffice/pota/saveCallbackResponse/
+
+---
+#FOR PROD AWS
+spring:
+    profiles: AWS-PROD
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://microservicios01.prod.reddsystem.com:40000/eureka/,  http://microservicios02.prod.reddsystem.com:40000/eureka/
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${random.value}
+    preferIpAddress: true
+
+#backoffice BD
+backoffice:
+    url : jdbc:mysql://rslitedb.prod.reddsystem.com:3306/backoffice?autoReconnect=true
+    user : usr_rslite
+    password : "2UThd>dxF+hy>MSM"
+    min : 2
+    max : 20
+
+#rslite BD
+lite:
+   url : jdbc:mysql://rslitedb.prod.reddsystem.com:3306/rsLite3?autoReconnect=true
+   user : usr_rslite
+   password : "2UThd>dxF+hy>MSM"
+   min : 2
+   max : 30
+
+microservices:
+    user: http://servicios.prod.reddsystem.com/metadata/user/
+    company: http://servicios.prod.reddsystem.com/metadata/company/
+    auth: http://servicios.prod.reddsystem.com/auth/authorization/
+    pota: http://servicios.prod.reddsystem.com:8181/esb-reporting-web/pota/
+    callback: http://servicios.prod.reddsystem.com/backoffice/pota/saveCallbackResponse/

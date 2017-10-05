@@ -1,0 +1,183 @@
+{
+    "profiles": [
+        {
+            "index": 1,
+            "realm": "plataformSel",
+            "state": "sales",
+            "title": "menu.sales",
+            "device": "desktop",
+            "user": "userSel",
+            "childs": [
+                {
+                    "title": "menu.customers",
+                    "state": "sales.customers",
+                    "index": 1,
+                    "url": "#/sales/client/admin/list/",
+                    "childs": []
+                },
+                {
+                    "title": "menu.tariffs",
+                    "state": "sales.tariffs",
+                    "index": 2,
+                    "url": "#/sales/tariff/list",
+                    "childs": []
+                },
+                {
+                    "title": "menu.transportOrders",
+                    "state": "sales.transportOrders",
+                    "index": 3,
+                    "url": "#/sales/transportorder/list",
+                    "childs": []
+                },
+                {
+                    "title": "menu.invocing",
+                    "state": "sales.invocing",
+                    "index": 4,
+                    "url": "#/sales/invocing/list",
+                    "childs": []
+                },
+                {
+                    "title": "menu.vehicles",
+                    "state": "sales.vehicles",
+                    "index": 5,
+                    "url": "#/backoffice/vehicle/admin/list/",
+                    "childs": []
+                },
+                {
+                    "title": "menu.drivers",
+                    "state": "sales.drivers",
+                    "index": 6,
+                    "url": "#/backoffice/driver/admin/list/",
+                    "childs": []
+                },
+                {
+                    "title": "menu.geofences",
+                    "state": "sales.geofences",
+                    "index": 7,
+                    "url": "#/backoffice/geofence/list/",
+                    "childs": []
+                }
+            ],
+            "url": "#"
+        },
+        {
+            "index": 2,
+            "realm": "plataformSel",
+            "state": "operations",
+            "title": "menu.operations",
+            "device": "desktop",
+            "user": "userSel",
+            "childs": [
+                {
+                    "title": "menu.planification",
+                    "state": "operations.planification",
+                    "index": 1,
+                    "url": "#/planifications/planification/admin",
+                    "childs": []
+                },
+                {
+                    "title": "menu.dispatch",
+                    "state": "operations.dispatch",
+                    "index": 2,
+                    "url": "#/planifications/dispatch/admin",
+                    "childs": []
+                },
+                {
+                    "title": "menu.routes",
+                    "state": "operations.rotues",
+                    "index": 3,
+                    "url": "#/planning/routes/admin",
+                    "childs": []
+                },
+                {
+                    "title": "menu.close",
+                    "state": "operations.close",
+                    "index": 4,
+                    "url": "#/planifications/close/",
+                    "childs": []
+                },
+                {
+                    "title": "menu.resume",
+                    "state": "operations.resume",
+                    "index": 5,
+                    "url": "#/reports/mysql/resume",
+                    "childs": []
+                },
+                {
+                    "title": "menu.commissions",
+                    "state": "operations.commissions",
+                    "index": 6,
+                    "url": "#/sales/commission/list",
+                    "childs": []
+                }
+            ],
+            "url": "#"
+        },
+        {
+            "index": 3,
+            "realm": "plataformSel",
+            "state": "fuel",
+            "title": "menu.fuel",
+            "device": "desktop",
+            "user": "userSel",
+            "childs": [
+                {
+                    "title": "menu.fuelImporter",
+                    "state": "fuel.fuelImporter",
+                    "index": 1,
+                    "url": "#/fuel/panel/list",
+                    "childs": []
+                }
+            ],
+            "url": "#"
+        },
+        {
+            "index": 4,
+            "realm": "plataformSel",
+            "state": "admin",
+            "title": "menu.admin",
+            "device": "desktop",
+            "user": "userSel",
+            "childs": [
+                {
+                    "title": "menu.enumerations",
+                    "state": "admin.enumerations",
+                    "index": 1,
+                    "url": "#/backoffice/enumerations/list",
+                    "childs": []
+                },
+                {
+                    "title": "menu.config",
+                    "state": "admin.config",
+                    "index": 2,
+                    "url": "#/backoffice/config/list",
+                    "childs": []
+                }
+            ],
+            "url": "#"
+        },
+        {
+            "index": 5,
+            "realm": "plataformSel",
+            "state": "indicators",
+            "title": "menu.indicators",
+            "device": "desktop",
+            "user": "userSel",
+            "childs": [
+                {
+                    "title": "menu.kpiServiceFulfillment",
+                    "state": "kpi.service_fulfillment",
+                    "index": 1,
+                    "url": "#/reports/kpi/service_fulfillment",
+                    "childs": []
+                }
+            ],
+            "url": "#"
+        }
+    ],
+    "status": "ok"
+}
+
+
+
+

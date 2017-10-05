@@ -1,0 +1,1011 @@
+{
+    "profiles": [
+        {
+            "description": "Configuracion de valores propios del usuario",
+            "index": 1,
+            "realm": "plataformSel",
+            "state": "configuration",
+            "title": "Configuracion del Usuario",
+            "device": "desktop",
+            "user": "userSel",
+            "childs": [
+                {
+                    "title": "configuration.isAdmin",
+                    "description": "Permisos de Administrador",
+                    "state": "configuration.isAdmin",
+                    "index": 1,
+                    "url": "",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "configuration.openDoors",
+                    "description": "Apertura de puertas",
+                    "state": "configuration.openDoors",
+                    "index": 2,
+                    "url": "",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "configuration.cutEngine",
+                    "description": "Corte de Motor",
+                    "state": "configuration.cutEngine",
+                    "index": 3,
+                    "url": "",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "configuration.onlineSearch",
+                    "description": "Consulta en Linea",
+                    "state": "configuration.onlineSearch",
+                    "index": 4,
+                    "url": "",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "configuration.reportconsolidateview",
+                    "description": "Ver consolidado de reporteria dinamica",
+                    "state": "configuration.reportconsolidateview",
+                    "index": 5,
+                    "url": "",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "configuration.reportFields",
+                    "description": "Ver campos de reportes dinamicos",
+                    "state": "configuration.reportFields",
+                    "index": 6,
+                    "url": "",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "configuration.viewReportNew",
+                    "description": "Ver reporteria nueva",
+                    "state": "configuration.viewReportNew",
+                    "index": 7,
+                    "url": "",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                                {
+                    "title": "configuration.synchronize",
+                    "description": "Sincronizar odometro y horometro",
+                    "state": "configuration.synchronize",
+                    "index": 8,
+                    "url": "",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                }
+                
+            ],
+            "url": "/configuration",
+            "content": {}
+        },
+        {
+            "description": "Acciones del Mapa y Elementos del Menu Izquierdo",
+            "index": 2,
+            "realm": "plataformSel",
+            "state": "map",
+            "title": "Mapa",
+            "device": "desktop",
+            "user": "userSel",
+            "childs": [
+                {
+                    "title": "map.left.fleet",
+                    "description": "Seguimiento de Flotas",
+                    "state": "map.menu.left.fleet",
+                    "index": 1,
+                    "url": "",
+                    "active": true,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "map.left.address",
+                    "description": "Buscador de Direcciones",
+                    "state": "map.menu.left.address",
+                    "index": 2,
+                    "url": "",
+                    "active": true,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "map.left.geofences",
+                    "description": "Buscador de Geocercas",
+                    "state": "map.menu.left.geofences",
+                    "index": 3,
+                    "url": "",
+                    "active": true,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "map.left.layers",
+                    "description": "Capas Disponibles",
+                    "state": "map.menu.left.layers",
+                    "index": 4,
+                    "url": "",
+                    "active": true,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "map.left.vehicles",
+                    "description": "Buscador de Móviles",
+                    "state": "map.menu.left.vehicles",
+                    "index": 5,
+                    "url": "",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "map.actions",
+                    "description": "Acciones al hacer click derecho en el mapa",
+                    "state": "map.actions",
+                    "index": 6,
+                    "url": "",
+                    "active": true,
+                    "childs": [
+                        {
+                            "title": "map.actions.calculateDistance",
+                            "description": "Accion Calcular Distancia",
+                            "state": "map.actions.calculateDistance",
+                            "index": 1,
+                            "url": "",
+                            "active": true,
+                            "childs": [],
+                            "content": {}
+                        },
+                        {
+                            "title": "map.actions.calculateArea",
+                            "description": "Accion Calcular Area",
+                            "state": "map.actions.calculateArea",
+                            "index": 2,
+                            "url": "",
+                            "active": true,
+                            "childs": [],
+                            "content": {}
+                        },
+                        {
+                            "title": "map.actions.infoPoint",
+                            "description": "Accion de Indentificar Punto",
+                            "state": "map.actions.infoPoint",
+                            "index": 3,
+                            "url": "",
+                            "active": true,
+                            "childs": [],
+                            "content": {}
+                        },
+                        {
+                            "title": "map.actions.searchCoordinate",
+                            "description": "Accion de buscar Coordenadas",
+                            "state": "map.actions.searchCoordinate",
+                            "index": 4,
+                            "url": "",
+                            "active": true,
+                            "childs": [],
+                            "content": {}
+                        },
+                        {
+                            "title": "map.actions.closeMobile",
+                            "description": "Accion de Móviles Cercanos",
+                            "state": "map.actions.closeMobile",
+                            "index": 5,
+                            "url": "",
+                            "active": true,
+                            "childs": [],
+                            "content": {}
+                        },
+                        {
+                            "title": "map.actions.seeTag",
+                            "description": "Accion de Ver Etiquetas",
+                            "state": "map.actions.seeTag",
+                            "index": 6,
+                            "url": "",
+                            "active": true,
+                            "childs": [],
+                            "content": {}
+                        },
+                        {
+                            "title": "map.actions.streetView",
+                            "description": "Accion de Ver en Street View",
+                            "state": "map.actions.streetView",
+                            "index": 7,
+                            "url": "",
+                            "active": true,
+                            "childs": [],
+                            "content": {}
+                        },
+                        {
+                            "title": "map.actions.makeCircularGeofence",
+                            "description": "Accion de Crear Geocerca Circular",
+                            "state": "map.actions.makeCircularGeofence",
+                            "index": 8,
+                            "url": "",
+                            "active": true,
+                            "childs": [],
+                            "content": {}
+                        },
+                        {
+                            "title": "map.actions.makePoligonalGeofence",
+                            "description": "Accion de Crear Geocerca Poligonal",
+                            "state": "map.actions.makePoligonalGeofence",
+                            "index": 9,
+                            "url": "",
+                            "active": true,
+                            "childs": [],
+                            "content": {}
+                        }
+                    ],
+                    "content": {}
+                }
+            ],
+            "url": "/map",
+            "content": {}
+        },
+        {
+            "description": "Lista de opciones de administracion",
+            "index": 3,
+            "realm": "plataformSel",
+            "state": "administration",
+            "title": "Administracion",
+            "device": "desktop",
+            "user": "userSel",
+            "childs": [
+                {
+                    "title": "administration.fleets_panel",
+                    "description": "Administración de Flotas",
+                    "state": "administration.fleetsPanel",
+                    "index": 1,
+                    "url": "/fleets_planel",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "administration.vehicles_Panel",
+                    "description": "Administración de Móviles",
+                    "state": "administration.vehiclesPanel",
+                    "index": 2,
+                    "url": "/vehicles_panel",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "administration.drivers_Panel",
+                    "description": "Administración de Conductores",
+                    "state": "administration.driversPanel",
+                    "index": 3,
+                    "url": "/drivers_panel",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "administration.geofence_Panel",
+                    "description": "Administración de Geocercas",
+                    "state": "administration.geofencePanel",
+                    "index": 4,
+                    "url": "/geofence_panel",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "administration.notifications_Panel",
+                    "description": "Administracón de Alarmas Basicas",
+                    "state": "administration.basicAlarm",
+                    "index": 5,
+                    "url": "/basic_alarm_panel",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "administration.alarms_Panel",
+                    "description": "Administración de Alarmas",
+                    "state": "administration.alarmsPanel",
+                    "index": 6,
+                    "url": "/alarms_panel",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "administration.alarms_Predefined",
+                    "description": "Administración de Alarmas Avanzadas",
+                    "state": "administration.alarmsPanelAdvanced",
+                    "index": 7,
+                    "url": "/alarms_panelAdvancedAlarms",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "administration.users_Panel",
+                    "description": "Administración de Usuarios",
+                    "state": "administration.usersPanel",
+                    "index": 8,
+                    "url": "/users_panel",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "administration.trailer",
+                    "description": "Administración de Trailer",
+                    "state": "administration.trailer",
+                    "index": 9,
+                    "url": "/trailer",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                }
+            ],
+            "url": "/administration",
+            "content": {}
+        },
+        {
+            "description": "Página Principal de Reportes",
+            "index": 4,
+            "realm": "plataformSel",
+            "state": "reports",
+            "title": "Reportes",
+            "device": "desktop",
+            "user": "userSel",
+            "childs": [
+                {
+                    "title": "reports.weeklyPanel",
+                    "description": "Cartola Semanal Empresa",
+                    "state": "reports.weeklyPanel",
+                    "index": 1,
+                    "url": "/weekly_panel",
+                    "childs": [],
+                    "active": false,
+                    "content": {}
+                },
+                {
+                    "title": "reports.fleetPanel",
+                    "description": "Cartola por Flota",
+                    "state": "reports.fleetPanel",
+                    "index": 2,
+                    "url": "/fleet_panel",
+                    "childs": [],
+                    "active": false,
+                    "content": {}
+                },
+                {
+                    "title": "reports.eventsPanel",
+                    "description": "Reportes de Eventos",
+                    "state": "reports.eventsPanel",
+                    "index": 3,
+                    "url": "/events_panel",
+                    "childs": [],
+                    "active": false,
+                    "content": {}
+                },
+                {
+                    "title": "reports.kilometersPanel",
+                    "description": "Reportes de Km Recorridos",
+                    "state": "reports.kilometersPanel",
+                    "index": 4,
+                    "url": "/kilometers_panel",
+                    "childs": [],
+                    "active": false,
+                    "content": {}
+                },
+                {
+                    "title": "reports.edlPanel",
+                    "description": "Reportes de EDL",
+                    "state": "reports.edlPanel",
+                    "index": 5,
+                    "url": "/EdlPanelCtrl",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.dashboardPanel",
+                    "description": "Reportes de Dashboard",
+                    "state": "reports.dashboardPanel",
+                    "index": 6,
+                    "url": "/dashboard_panel",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.dashboardPanelByFleet",
+                    "description": "Reportes de Dashboard por Flota",
+                    "state": "reports.dashboardPanelByFleet",
+                    "index": 7,
+                    "url": "http://analytics.rastreosat.cl/dashboard/?",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.inactivesVehicles",
+                    "description": "Reportes de Móviles Inactivos",
+                    "state": "reports.inactivesVehicles",
+                    "index": 8,
+                    "url": "/inactivesVehicles_panel",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.drivers",
+                    "description": "Reportes de Conductores",
+                    "state": "reports.drivers",
+                    "index": 9,
+                    "url": "/drivers_panel",
+                    "childs": [],
+                    "active": false,
+                    "content": {}
+                },
+                {
+                    "title": "reports.driversRankingPanel",
+                    "description": "Reportes de Ranking de Conductores",
+                    "state": "reports.driversRankingPanel",
+                    "index": 10,
+                    "url": "/drivers_ranking_panel",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.driversVehiclesPanel",
+                    "description": "Reportes de Ranking de patentes",
+                    "state": "reports.driversVehiclesPanel",
+                    "index": 11,
+                    "url": "/vehicles_ranking_panel",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.rfidPanel",
+                    "description": "Reportes de Ranking de RFID",
+                    "state": "reports.rfidPanel",
+                    "index": 12,
+                    "url": "/rfid_panel",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.activityMotor",
+                    "description": "Reportes de Actividad de Motor",
+                    "state": "reports.activityMotor",
+                    "index": 13,
+                    "url": "/activityMotor",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.eventDetail",
+                    "description": "Reportes de Detalle de Eventos",
+                    "state": "reports.eventDetail",
+                    "index": 14,
+                    "url": "/eventDetail",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.useAfterHours",
+                    "description": "Reportes de Uso Fuera de Horario",
+                    "state": "reports.useAfterHours",
+                    "index": 15,
+                    "url": "/useAfterHours",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.overspeed",
+                    "description": "Reportes de Excesos de Velocidad",
+                    "state": "reports.overspeed",
+                    "index": 16,
+                    "url": "/overspeed",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.movilState",
+                    "description": "Reportes de Estado de Movil",
+                    "state": "reports.movilState",
+                    "index": 17,
+                    "url": "/movilState",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.lastState",
+                    "description": "Reportes de Ultima Posicion",
+                    "state": "reports.lastState",
+                    "index": 18,
+                    "url": "/lastState",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.alarm",
+                    "description": "Reportes de Alarmas",
+                    "state": "reports.alarm",
+                    "index": 19,
+                    "url": "/alarm",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.HourmeterLeased",
+                    "description": "Reportes de Horometro Arrendado",
+                    "state": "reports.HourmeterLeased",
+                    "index": 20,
+                    "url": "/HourmeterLeased",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.client",
+                    "description": "Reportes de Clientes",
+                    "state": "reports.client",
+                    "index": 21,
+                    "url": "/client",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.consolidated",
+                    "description": "Reportes de Consolidado",
+                    "state": "reports.consolidated",
+                    "index": 22,
+                    "url": "/consolidated",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.trips",
+                    "description": "Reportes de Viajes",
+                    "state": "reports.trips",
+                    "index": 23,
+                    "url": "/trips",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.detentions",
+                    "description": "Reportes de Detenciones",
+                    "state": "reports.detentions",
+                    "index": 24,
+                    "url": "/detentions",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.aeMotors",
+                    "description": "Reportes de Apagado y Encendido de Motor",
+                    "state": "reports.aeMotors",
+                    "index": 25,
+                    "url": "/aeMotors",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.temperature",
+                    "description": "Reportes de Temperatura menu Padre",
+                    "state": "reports.temperature",
+                    "index": 26,
+                    "url": "/temperature",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.driverReport",
+                    "description": "Reportes de Conductores funcion habilitada solo para transportes ccu y empresa default",
+                    "state": "reports.driverReport",
+                    "index": 27,
+                    "url": "/driverReport",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.temperatureReport",
+                    "description": "Reporte de Temperatura",
+                    "state": "reports.temperatureReport",
+                    "index": 28,
+                    "url": "/temperatureReport",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.consolidatedTemperature",
+                    "description": "Reporte de Consolidado de Temperatura",
+                    "state": "reports.consolidatedTemperature",
+                    "index": 29,
+                    "url": "/consolidatedTemperature",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                }
+            ],
+            "url": "/reports",
+            "content": {}
+        },
+        {
+            "description": "Opciones",
+            "index": 5,
+            "realm": "plataformSel",
+            "state": "options",
+            "title": "Opciones",
+            "device": "desktop",
+            "user": "userSel",
+            "childs": [
+                {
+                    "title": "options.about",
+                    "description": "Acerca de",
+                    "state": "options.about",
+                    "index": 1,
+                    "url": "/about",
+                    "active": true,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "options.manuals",
+                    "description": "Descarga de Manuales de la Plataforma",
+                    "state": "options.manuals",
+                    "index": 2,
+                    "url": "/manuals",
+                    "active": true,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "options.changepass",
+                    "description": "Cambiar Contraseña",
+                    "state": "options.changepass",
+                    "index": 3,
+                    "url": "/changepass",
+                    "active": true,
+                    "childs": [],
+                    "content": {}
+                }
+            ],
+            "url": "/options",
+            "content": {}
+        },
+        {
+            "description": "Grilla de Vehiculos",
+            "index": 6,
+            "realm": "plataformSel",
+            "state": "vehicleGrid",
+            "title": "Grilla de Vechiculos",
+            "device": "desktop",
+            "user": "userSel",
+            "childs": [
+                {
+                    "title": "Columna Tipo Móviles",
+                    "description": "Muestra icono de tipo de movil",
+                    "state": "vehicleGrid.typeVehicle",
+                    "index": 1,
+                    "url": "0",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "Ver en Mapa",
+                    "description": "Centra el Móvil en el Mapa",
+                    "state": "vehicleGrid.options.center",
+                    "index": 2,
+                    "url": "0",
+                    "active": true,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "Seguimiento Móvil",
+                    "description": "Seguimiento de un Movil",
+                    "state": "vehicleGrid.options.track",
+                    "index": 3,
+                    "url": "0",
+                    "active": true,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "Ver Información",
+                    "description": "Muestra informacion de un Móvil",
+                    "state": "vehicleGrid.options.info",
+                    "index": 4,
+                    "url": "0",
+                    "active": true,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "Ver Eventos",
+                    "description": "Muestra Eventos de un Móvil",
+                    "state": "vehicleGrid.options.events",
+                    "index": 5,
+                    "url": "0",
+                    "active": true,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "Ver Reportes",
+                    "description": "Muestra Reportes de un Móvil",
+                    "state": "vehicleGrid.options.reports",
+                    "index": 6,
+                    "url": "0",
+                    "active": true,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "Descarga de Certificado",
+                    "description": "Descarga de Certificado",
+                    "state": "vehicleGrid.options.certificated",
+                    "index": 7,
+                    "url": "0",
+                    "active": true,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "Ruta de Movil",
+                    "description": "Muestra la Ruta del Móvil",
+                    "state": "vehicleGrid.options.movilRoute",
+                    "index": 8,
+                    "url": "0",
+                    "active": true,
+                    "childs": [],
+                    "content": {}
+                }
+            ],
+            "url": "/vehiclesGrid",
+            "content": {}
+        },
+        {
+            "description": "Reportes customizados por usuario",
+            "index": 7,
+            "realm": "plataformSel",
+            "state": "newReports",
+            "title": "Reporteria Nueva",
+            "device": "desktop",
+            "user": "userSel",
+            "childs": [
+                {
+                    "title": "reports.kilometersPanel",
+                    "description": "Reportes de Km Recorridos",
+                    "state": "reports.kilometersPanel",
+                    "index": 0,
+                    "url": "/kilometers_panel",
+                    "childs": [],
+                    "active": false,
+                    "content": {}
+                },
+                {
+                    "title": "reports.overspeed",
+                    "description": "Reportes de Excesos de Velocidad",
+                    "state": "reports.overspeed",
+                    "index": 1,
+                    "url": "/overspeed",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.consolidated",
+                    "description": "Reportes de Consolidado",
+                    "state": "reports.consolidated",
+                    "index": 2,
+                    "url": "/consolidated",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.useAfterHours",
+                    "description": "Reportes de Uso Fuera de Horario",
+                    "state": "reports.useAfterHours",
+                    "index": 3,
+                    "url": "/useAfterHours",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.detentions",
+                    "description": "Reportes de Detenciones",
+                    "state": "reports.detentions",
+                    "index": 4,
+                    "url": "/detentions",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.HourmeterLeased",
+                    "description": "Reportes de Horometro Arrendado",
+                    "state": "reports.HourmeterLeased",
+                    "index": 5,
+                    "url": "/HourmeterLeased",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.activityMotor",
+                    "description": "Reportes de Actividad de Motor",
+                    "state": "reports.activityMotor",
+                    "index": 6,
+                    "url": "/activityMotor",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.trips",
+                    "description": "Reportes de Viajes",
+                    "state": "reports.trips",
+                    "index": 7,
+                    "url": "/trips",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.eventDetail",
+                    "description": "Reportes de Detalle de Eventos",
+                    "state": "reports.eventDetail",
+                    "index": 8,
+                    "url": "/eventDetail",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.drivers",
+                    "description": "Reportes de Conductores",
+                    "state": "reports.drivers",
+                    "index": 9,
+                    "url": "/drivers_panel",
+                    "childs": [],
+                    "active": false,
+                    "content": {}
+                },
+                {
+                    "title": "reports.lastState",
+                    "description": "Reportes de Ultima Posicion",
+                    "state": "reports.lastState",
+                    "index": 10,
+                    "url": "/lastState",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.driversVehiclesPanel",
+                    "description": "Reportes de Ranking de patentes",
+                    "state": "reports.driversVehiclesPanel",
+                    "index": 11,
+                    "url": "/vehicles_ranking_panel",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.driversRankingPanel",
+                    "description": "Reportes de Ranking de Conductores",
+                    "state": "reports.driversRankingPanel",
+                    "index": 12,
+                    "url": "/drivers_ranking_panel",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.zoneIn",
+                    "description": "Reportes de Estadías en Zona",
+                    "state": "reports.zoneIn",
+                    "index": 13,
+                    "url": "/zone_in",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.alarm",
+                    "description": "Reportes de Alarmas",
+                    "state": "reports.alarm",
+                    "index": 14,
+                    "url": "/alarm",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.temperatureReport",
+                    "description": "Reporte de Temperatura",
+                    "state": "reports.temperatureReport",
+                    "index": 15,
+                    "url": "/temperatureReport",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                },
+                {
+                    "title": "reports.movilState",
+                    "description": "Reporte de Estado de Movil",
+                    "state": "reports.movilState",
+                    "index": 16,
+                    "url": "/movilState",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                }
+            ],
+            "url": "/reports",
+            "content": {}
+        },
+        {
+            "description": "Ingreso a la plataforma Trans Manager",
+            "index": 8,
+            "realm": "plataformSel",
+            "state": "transManager",
+            "title": "Trans Manager",
+            "device": "desktop",
+            "user": "userSel",
+            "childs": [
+                {
+                    "title": "transManager.enabled",
+                    "description": "Habilitar Trans Manager",
+                    "state": "transManager.enabled",
+                    "index": 1,
+                    "url": "/enabledTransManager",
+                    "active": false,
+                    "childs": [],
+                    "content": {}
+                }
+            ],
+            "url": "/transmanager",
+            "content": {}
+        }
+    ],
+    "status": "ok"
+}
